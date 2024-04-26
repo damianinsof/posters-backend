@@ -194,6 +194,7 @@ const accessUser = async (req, res)=>{
     const {user,password} = req.body
     const lista =await  getListaFromUserPass(user,password)
     const pedidoGuardado = await getOrderByUser(user)
+    console.log(user,password)
     if (lista) {
         const token = jwt.sign({user,lista}, secretKey, {expiresIn: '24h'})
         const prices = await getPricesFromLista(lista)
