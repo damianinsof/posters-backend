@@ -80,7 +80,9 @@ para poder mostrar en la pagina un h1 que diga 'Hola ' + nombre
 A
 */
 
-
+usersRouter.get('/',(req,res)=>{
+    res.send('Backend Ok')
+})
 
 app.listen(PORT, () =>{
     console.log('el servidor se escucha en http://localhost:' + PORT +'/')
