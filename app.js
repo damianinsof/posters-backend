@@ -80,7 +80,7 @@ para poder mostrar en la pagina un h1 que diga 'Hola ' + nombre
 A
 */
 
-usersRouter.get('/',(req,res)=>{
+app.get('/',(req,res)=>{
     res.send('Backend Ok')
 })
 
