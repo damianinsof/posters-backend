@@ -10,6 +10,10 @@ const { deleteStoreByUser, deleteUser } = require('../services/serviceUsers')
 
 const usersRouter = express.Router()
 
+usersRouter.get('/',(req,res)=>{
+    res.send('Backend Ok')
+})
+
 usersRouter.post('/register', addUser)
 
 usersRouter.post('/login',accessUser )
