@@ -64,25 +64,11 @@ Utilizo dos soluciones de Tanstack:
 
 
 
-### Problema al publicar
+## Publicación
 
 la publicacion la pude realizar con render y cleaver-cloud el backend
 y railway el frontend
 dirección: 
 
- https://posters-frontend-production.up.railway.app/
+# https://posters-frontend-production.up.railway.app/
 
-Pero me da el siguiente error que estoy tratando de resolver.
-
-En el Login, al ingresar un usuario registrado, recupera la lista de precios y se le asigna el JsonWebToken para poder trabajar con servidor.
-vemos que en modo cliente servidor funciona bien
-
-![](./readme_md_img/localloguin.png)
-Al hacer el loguin recargo la pagina y agrego el precio (leyendo del localstorage) al cache.
-
-Pero al publicar los valores del localstorage no quedan en el cliente o lo enmascara de otra manera
-
-![](./readme_md_img/remotelogin.png)
-
-Hoy 29/4/2024 estoy tratando de resolver eso.
-En modo local funciona bien
